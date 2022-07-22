@@ -4,7 +4,7 @@ title:      HelloWorld
 subtitle:   在个人博客的第一篇文章
 date:       2022-07-23
 author:     Packy
-header-img: post-bg-os-metro.jpg
+header-img: img/post-bg-os-metro.jpg
 catalog: true
 tags:
     - Blog
