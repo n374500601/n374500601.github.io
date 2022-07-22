@@ -1,16 +1,15 @@
 ---
 layout:     post
 title:      Hello World
-subtitle:   在个人博客的第一篇文章
-date:       2022-07-23
+subtitle:   第一篇文章
+date:       2017-07-23
 author:     Pac-K
-header-img: img/post-bg-os-metro.jpg
+header-img: img/post-bg-universe.jpg
 catalog: true
 tags:
-    - Blog
+    - 原创
 ---
 
-> “Hello World”
 
 # Hello World
 
@@ -33,3 +32,5 @@ tags:
 第一篇文章先写这些，后续我会慢慢整理、调整、输出。
 
 谢谢所有看到这里的人。
+
+
