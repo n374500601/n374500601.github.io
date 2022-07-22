@@ -3,7 +3,7 @@ title: Nihility Pub
 SEOTitle: Nihility Pub
 header-img: img/post-bg-desk.jpg
 email: 374500601@qq.com
-description: "Test Text"
+description: "愿所有人拜托虚无"
 keyword: "Nihility Pub,n374500601 ,Pac-K, Packy, iOS, Apple, iPhone"
 url: "http://n374500601.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,7 +12,7 @@ github_repo: "https://github.com/n374500601/n374500601.github.io.git" # you code
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "此处模板图片待修改"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `Thinking will not overcome fear but action will.   /about/`
 
 
 
