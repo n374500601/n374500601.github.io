@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Hello World
+title:      HelloWorld
 subtitle:   在个人博客的第一篇文章
 date:       2022-07-23
 author:     Pac-K
@@ -9,7 +9,6 @@ catalog: true
 tags:
     - Blog
 ---
-
 
 这是我第一篇博客，我不知道为什么，程序员都喜欢以Hello World作为开头，我实在没有什么想法，就不免俗了，尽管我内心不是很承认目前我是一名合格的程序员，我更希望自己是一名游戏设计师。
 
