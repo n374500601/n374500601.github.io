@@ -7,7 +7,7 @@ author:     Packy
 header-img: img/post-bg-os-metro.jpg
 catalog: true
 tags:
-    - Blog
+    - 原创
 ---
 
 #Hello World
@@ -31,4 +31,3 @@ tags:
 第一篇文章先写这些，后续我会慢慢整理、调整、输出。
 
 谢谢所有看到这里的人。
-
