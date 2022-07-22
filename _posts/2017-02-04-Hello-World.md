@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      Hello 2017
-subtitle:    "\"Hello World, Hello Blog\""
-date:       2017-02-04
-author:     BY
-header-img: img/post-bg-2015.jpg
+title:      Hello World
+subtitle:   第一篇文章
+date:       2017-07-23
+author:     Pac-K
+header-img: img/post-bg-universe.jpg
 catalog: true
 tags:
-    - 生活
+    - 原创
 ---
 
 
