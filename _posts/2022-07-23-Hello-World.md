@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      HelloWorld
+title:      Hello World
 subtitle:   在个人博客的第一篇文章
 date:       2022-07-23
-author:     Packy
+author:     Pac-K
 header-img: img/post-bg-os-metro.jpg
 catalog: true
 tags:
-    - 原创
+    - Blog
 ---
 
 # Hello World
