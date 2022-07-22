@@ -3,7 +3,7 @@ title: Nihility Pub
 SEOTitle: Nihility Pub
 header-img: img/post-bg-desk.jpg
 email: 374500601@qq.com
-description: "愿所有人拜托虚无"
+description: "愿所有人摆脱虚无"
 keyword: "Nihility Pub,n374500601 ,Pac-K, Packy, iOS, Apple, iPhone"
 url: "http://n374500601.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -86,7 +86,7 @@ gitalk:
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
 
 
 
