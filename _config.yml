@@ -5,7 +5,7 @@ header-img: img/post-bg-os-metro.jpg
 email: 374500601@qq.com
 description: "近人可读"
 keyword: "Nihility Pub, n374500601, Pac-K, Packy, iOS, Apple, iPhone"
-url: "http://n374500601.github.io"          # your host, for absolute URL
+url: "https://nihility.pub"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/n374500601/n374500601.github.io.git" # you code repository
 
