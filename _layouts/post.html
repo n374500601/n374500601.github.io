@@ -88,12 +88,10 @@ layout: default
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
                 <style>
                     #waline-container { --waline-font-size: 16px; --waline-avatar-size: 0px; }
-                    /* 隐藏头像列 */
-                    #waline-container .wl-user { display: none !important; }
-                    /* 隐藏底部 RSS 订阅链接 */
-                    #waline-container .wl-links { display: none !important; }
-                    /* 隐藏 Powered by Waline */
-                    #waline-container .wl-power { display: none !important; }
+                    /* 彻底隐藏头像整列（包含边框）*/
+                    #waline-container .wl-cards .wl-user { display: none !important; }
+                    /* 隐藏底部 RSS + Powered by Waline */
+                    #waline-container .wl-meta-foot { display: none !important; }
                     /* 隐藏浏览器/OS标识 */
                     #waline-container .wl-browser,
                     #waline-container .wl-os { display: none !important; }
