@@ -110,7 +110,10 @@ header-img: "img/about-Pac_K.jpg "
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
 <style>
     #waline-container { --waline-font-size: 16px; }
-    .wl-actions { display: none !important; }
+    #waline-container .wl-avatar { display: none !important; }
+    #waline-container .wl-footer { display: none !important; }
+    #waline-container .wl-browser { display: none !important; }
+    #waline-container .wl-os { display: none !important; }
 </style>
 <div id="waline-container"></div>
 <script type="module">
@@ -122,6 +125,7 @@ header-img: "img/about-Pac_K.jpg "
         meta: ['nick'],
         requiredMeta: ['nick'],
         login: 'disable',
+        avatar: false,
     });
 </script>
 {% endif %}
