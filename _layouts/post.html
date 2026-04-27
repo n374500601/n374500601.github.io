@@ -87,9 +87,13 @@ layout: default
                 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
                 <style>
                     #waline-container { --waline-font-size: 16px; }
-                    #waline-container .wl-avatar { display: none !important; }
-                    #waline-container .wl-footer { display: none !important; }
-                    #waline-container .wl-browser { display: none !important; }
+                    /* 隐藏头像及其占位空间 */
+                    #waline-container .wl-user { display: none !important; }
+                    #waline-container .wl-item-body { margin-left: 0 !important; }
+                    /* 隐藏底部订阅RSS + Powered by，不影响提交按钮 */
+                    #waline-container .wl-copyright { display: none !important; }
+                    /* 隐藏浏览器/OS标识 */
+                    #waline-container .wl-browser,
                     #waline-container .wl-os { display: none !important; }
                 </style>
                 <div id="waline-container"></div>
