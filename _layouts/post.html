@@ -93,24 +93,24 @@ layout: default
                     #waline-container .wl-card:first-child { margin-inline-start: 0 !important; }
                     /* 隐藏浏览器/OS标识及其容器（消除昵称下空白） */
                     #waline-container .wl-card .wl-meta { display: none !important; }
-                    /* 重置评论内容区间距，避免主题全局 p margin 造成昵称下方空白 */
+                    /* 重置评论正文真实结构的间距：.wl-content > div > p */
                     #waline-container .wl-card .wl-content {
                         padding-top: 0 !important;
                         margin-top: 0 !important;
                     }
-                    #waline-container .wl-card .wl-content > :first-child,
-                    #waline-container .wl-card .wl-content > p {
+                    #waline-container .wl-card .wl-content > div,
+                    #waline-container .wl-card .wl-content > div > * {
                         margin-top: 0 !important;
                     }
-                    #waline-container .wl-card .wl-content > :last-child,
-                    #waline-container .wl-card .wl-content > p:last-child {
-                        margin-bottom: 0 !important;
+                    #waline-container .wl-card .wl-content > div > p {
+                        margin: 0 !important;
                     }
-                    #waline-container .wl-card .wl-content > * + * {
-                        margin-top: 0.75em !important;
-                    }
-                    #waline-container .wl-card .wl-content p:empty {
+                    #waline-container .wl-card .wl-content > div > p:empty,
+                    #waline-container .wl-card .wl-content > div:empty {
                         display: none !important;
+                    }
+                    #waline-container .wl-card .wl-reply-to {
+                        margin-top: 0 !important;
                     }
                     /* 隐藏底部 RSS + Powered by Waline */
                     #waline-container .wl-meta-foot { display: none !important; }
@@ -125,6 +125,8 @@ layout: default
                         meta: ['nick'],
                         requiredMeta: ['nick'],
                         login: 'disable',
+                        noRss: true,
+                        noCopyright: true,
                     });
                 </script>
                 {% endif %}
