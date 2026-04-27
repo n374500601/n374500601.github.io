@@ -85,6 +85,10 @@ layout: default
                 <!-- Waline评论 start -->
                 {% if site.waline.enable %}
                 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
+                <style>
+                    #waline-container { --waline-font-size: 16px; }
+                    .wl-actions { display: none !important; }
+                </style>
                 <div id="waline-container"></div>
                 <script type="module">
                     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
@@ -92,7 +96,9 @@ layout: default
                         el: '#waline-container',
                         serverURL: '{{ site.waline.serverURL }}',
                         lang: 'zh-CN',
+                        meta: ['nick'],
                         requiredMeta: ['nick'],
+                        login: 'disable',
                     });
                 </script>
                 {% endif %}
