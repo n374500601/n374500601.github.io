@@ -67,8 +67,6 @@ waline:
   enable: true
   serverURL: https://waline-eta-nine.vercel.app
 
-ui_version: 2026.04.28-01
-
 
 # # 统计
 
