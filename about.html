@@ -105,26 +105,18 @@ header-img: "img/about-Pac_K.jpg "
     _render();
 </script>
 
-<!-- Gitalk 评论 start  -->
-{% if site.gitalk.enable %}
-<!-- Link Gitalk 的支持文件  -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-    <script type="text/javascript">
-    var gitalk = new Gitalk({
-
-    // gitalk的主要参数
-		clientID: `9af33eaeddabfca82167`,
-		clientSecret: `ef086bb4e8020a650b3b2beee0d360576db3fe1f`,
-		repo: `n374500601.github.io`,
-		owner: 'n374500601',
-		admin: ['n374500601'],
-		id: 'n374500601.github.io.about',
-    
+<!-- Waline评论 start -->
+{% if site.waline.enable %}
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
+<div id="waline-container"></div>
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    init({
+        el: '#waline-container',
+        serverURL: '{{ site.waline.serverURL }}',
+        lang: 'zh-CN',
+        requiredMeta: ['nick'],
     });
-    gitalk.render('gitalk-container');
 </script>
 {% endif %}
-<!-- Gitalk end -->
+<!-- Waline评论 end -->
