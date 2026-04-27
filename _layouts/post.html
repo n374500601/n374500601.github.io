@@ -85,20 +85,22 @@ layout: default
                 <!-- Waline评论 start -->
                 {% if site.waline.enable %}
                 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css">
                 <style>
-                    #waline-container { --waline-font-size: 16px; }
-                    /* 隐藏头像及其占位空间 */
+                    #waline-container { --waline-font-size: 16px; --waline-avatar-size: 0px; }
+                    /* 隐藏头像列 */
                     #waline-container .wl-user { display: none !important; }
-                    #waline-container .wl-item-body { margin-left: 0 !important; }
-                    /* 隐藏底部订阅RSS + Powered by，不影响提交按钮 */
-                    #waline-container .wl-copyright { display: none !important; }
+                    /* 隐藏底部 RSS 订阅链接 */
+                    #waline-container .wl-links { display: none !important; }
+                    /* 隐藏 Powered by Waline */
+                    #waline-container .wl-power { display: none !important; }
                     /* 隐藏浏览器/OS标识 */
                     #waline-container .wl-browser,
                     #waline-container .wl-os { display: none !important; }
                 </style>
                 <div id="waline-container"></div>
                 <script type="module">
-                    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+                    import { init } from 'https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js';
                     init({
                         el: '#waline-container',
                         serverURL: '{{ site.waline.serverURL }}',
@@ -106,7 +108,6 @@ layout: default
                         meta: ['nick'],
                         requiredMeta: ['nick'],
                         login: 'disable',
-                        avatar: false,
                     });
                 </script>
                 {% endif %}
