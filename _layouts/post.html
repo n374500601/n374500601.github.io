@@ -89,8 +89,8 @@ layout: default
                 <style>
                     #waline-container { --waline-font-size: 16px; --waline-avatar-size: 0px; }
                     /* 彻底隐藏头像整列（包含边框）*/
-                    #waline-container .wl-cards .wl-user { display: none !important; }
-                    /* 隐藏底部 RSS + Powered by Waline */
+                    #waline-container .wl-cards .wl-user { display: none !important; }                    /* 消除头像隐藏后残留的左边距 */
+                    #waline-container .wl-card:first-child { margin-inline-start: 0 !important; }                    /* 隐藏底部 RSS + Powered by Waline */
                     #waline-container .wl-meta-foot { display: none !important; }
                     /* 隐藏浏览器/OS标识 */
                     #waline-container .wl-browser,
